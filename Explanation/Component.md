@@ -12,7 +12,6 @@
   * perfix
   * suffix
   * value(v-model)
-
 * Number Input
   * allowClear
   * defaultValue
@@ -25,7 +24,6 @@
   * suffix
   * step
   * value
-
 * selectBox
   * allowClear
   * showSearch : 검색할지 안할지
@@ -37,7 +35,6 @@
   * min (tag)
   * notFounddContent : search못했을때
   * value
-
 * checkBox
   * value
   * disabled
@@ -45,7 +42,6 @@
   * falseValue
   * leftLabel
   * rightLabel
-
 * radioButton
   * value
   * disabled
@@ -53,8 +49,11 @@
   * falseValue
   * leftLabel
   * rightLabel
-
 * textArea
+  * rows로 고정높이 지정할 수 있게. 
+    -> antd의 경우 rows로 하면 높이고정시킬방법이없음.
+    -> autoSize로 할수있지만 한글입력에 문제발생.
+
 * datePicker
   * allowClear
   * disabled
@@ -65,7 +64,6 @@
   * showToday : today로 이동하는 버튼
   * today
   * ~~calendarButton(?) : true면 달력여는 버튼이 따로~~
-
 * rangePicker
   * allowEmpty
   * allowClear
