@@ -4,7 +4,6 @@
     <router-link to="/about">About</router-link>
   </div>
   <router-view />
-  <div class="testBox"></div>
 </template>
 
 <style lang="scss">
@@ -26,11 +25,5 @@
       color: #42b983;
     }
   }
-}
-
-.textBox {
-  width: 500px;
-  height: 130px;
-  backgroundcolor: $bgColor;
 }
 </style>
