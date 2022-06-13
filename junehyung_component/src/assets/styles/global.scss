@@ -1,2 +1,57 @@
 $bgColor: red;
-$marginLeft: 100px;
+$bgColor2: blue;
+
+$size-list: (xs, sm, md, lg, xl);
+// margin & padding
+@each $size in $size-list {
+  $index: index($size-list, $size);
+  // margin
+  .j-mt-#{$size}{
+    margin-top: 4px * $index;
+  }
+  .j-mb-#{$size}{
+    margin-bottom: 4px * $index;
+  }
+  .j-ml-#{$size}{
+    margin-left: 4px * $index;
+  }
+  .j-mr-#{$size}{
+    margin-right: 4px * $index;
+  }
+  .j-mx-#{$size}{
+    margin-left: 4px * $index;
+    margin-right: 4px * $index;
+  }
+  .j-my-#{$size}{
+    margin-top: 4px * $index;
+    margin-bottom: 4px * $index;
+  }
+  .j-ma-#{$size}{
+    margin: 4px * $index;
+  }
+
+  // padding
+  .j-pt-#{$size}{
+    padding-top: 4px * $index;
+  }
+  .j-pb-#{$size}{
+    padding-bottom: 4px * $index;
+  }
+  .j-pl-#{$size}{
+    padding-left: 4px * $index;
+  }
+  .j-pr-#{$size}{
+    padding-right: 4px * $index;
+  }
+  .j-px-#{$size}{
+    padding-left: 4px * $index;
+    padding-right: 4px * $index;
+  }
+  .j-py-#{$size}{
+    padding-top: 4px * $index;
+    padding-bottom: 4px * $index;
+  }
+  .j-pa-#{$size}{
+    padding: 4px * $index;
+  }
+}
