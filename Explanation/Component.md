@@ -180,3 +180,9 @@ pl-left | pr-right | pt-top | pb-bottom
 https://antdv.com/components/overview
 
 https://vuetifyjs.com/en/
+
+
+
+https://sass-lang.com/documentation/values/maps#look-up-a-value
+
+https://www.w3schools.com/sass/sass_functions_map.php
