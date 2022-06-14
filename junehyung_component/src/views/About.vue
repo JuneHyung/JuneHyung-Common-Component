@@ -2,14 +2,33 @@
   <div class="about">
     <h1>This is an about page</h1>
   </div>
-  <div class="testBox"></div>
-  <div class="testBox2 j-ma-lg j-pa-sm"></div>
+  <div class="box-wrap">
+    <div class="testBox bg-red-13 jh-mx-sm"></div>
+    <div class="testBox bg-purple-13 jh-mx-sm"></div>
+    <div class="testBox bg-pink-13 jh-mx-sm"></div>
+    <div class="testBox bg-red-13 jh-mx-sm"></div>
+    <div class="testBox bg-purple-13 jh-mx-sm"></div>
+    <div class="testBox bg-pink-13 jh-mx-sm"></div>
+    <div class="testBox bg-red-13 jh-mx-sm"></div>
+    <div class="testBox bg-purple-13 jh-mx-sm"></div>
+    <div class="testBox bg-pink-13 jh-mx-sm"></div>
+    <div class="testBox bg-red-13 jh-mx-sm"></div>
+    <div class="testBox bg-purple-13 jh-mx-sm"></div>
+    <div class="testBox bg-pink-13 jh-mx-sm"></div>
+  </div>
+  <div class="testBox bg-red-5 jh-my-sm"></div>
+  <div class="testBox bg-purple-5"></div>
 </template>
 <style lang="scss" scoped>
+.box-wrap {
+  display: flex;
+  flex-direction: row;
+}
 .testBox {
   width: 200px;
   height: 200px;
-  background-color: $bgColor;
+  border: 1px solid #ddd;
+  flex: 1;
 }
 .testBox2 {
   width: 200px;
