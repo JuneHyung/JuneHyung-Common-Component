@@ -14,15 +14,15 @@
     <div class="testBox bg-teal-13 jh-mx-sm"></div>
     <div class="testBox bg-green-13 jh-mx-sm"></div>
 
-    <div class="testBox bg-light-gren-13 jh-mx-sm"></div>
+    <div class="testBox bg-light-green-13 jh-mx-sm"></div>
     <div class="testBox bg-lime-13 jh-mx-sm"></div>
     <div class="testBox bg-yellow-13 jh-mx-sm"></div>
     <div class="testBox bg-amber-13 jh-mx-sm"></div>
     <div class="testBox bg-orange-13 jh-mx-sm"></div>
     <div class="testBox bg-deep-orange-13 jh-mx-sm"></div>
-    <div class="testBox bg-brown-13 jh-mx-sm"></div>
-    <div class="testBox bg-grey-13 jh-mx-sm"></div>
-    <div class="testBox bg-blue-grey-13 jh-mx-sm"></div>
+    <div class="testBox bg-brown-4 jh-mx-sm"></div>
+    <div class="testBox bg-grey-4 jh-mx-sm"></div>
+    <div class="testBox bg-blue-grey-4 jh-mx-sm"></div>
   </div>
   <div class="testBox bg-red-5 jh-my-sm"></div>
   <div class="testBox bg-purple-5"></div>
