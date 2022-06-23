@@ -26,20 +26,24 @@
   </div>
   <div class="testBox bg-red-5 jh-my-sm"></div>
   <div class="testBox bg-purple-5"></div>
+  <!-- <input v-model="nameInput" /> -->
   <JhInput
     :value="nameInput"
     preffix="1"
     suffix=" 입니다."
     placeholder="이름입력하세요."
-    :allowClear="false"
-    maxLength="10"
-    disabled
+    :allowClear="true"
+    :maxLength="10"
   ></JhInput>
+  <button @click="test"></button>
 </template>
 <script setup>
 import { ref } from "vue";
 import JhInput from "@/components/form/JhInput.vue";
 const nameInput = ref("defaultValue");
+const test = () => {
+  console.log(nameInput.value);
+};
 </script>
 
 <style lang="scss" scoped>

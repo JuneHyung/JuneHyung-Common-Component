@@ -1,6 +1,7 @@
 $bgColor: red;
 $bgColor2: blue;
 @import "color.scss";
+@import "form/input.scss";
 $size-list: (xs, sm, md, lg, xl);
 // margin & padding
 @each $size in $size-list {
@@ -54,4 +55,20 @@ $size-list: (xs, sm, md, lg, xl);
   .jh-pa-#{$size}{
     padding: 4px * $index;
   }
+}
+
+.row{
+  display:flex;
+  flex-wrap:wrap;
+}
+  
+.self-center{
+align-self: center
+}
+
+.items-center{
+  align-items: center;
+}
+.justify-center{
+  justify-items: center;
 }
