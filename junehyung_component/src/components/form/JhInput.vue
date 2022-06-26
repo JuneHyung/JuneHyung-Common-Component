@@ -5,10 +5,11 @@
     </div>
     <input
       type="text"
-      v-model="getData"
+      :value="value"
       :disabled="disabled"
       :maxlength="maxLength"
       :placeholder="placeholder"
+      @input="handleInput"
     />
     <div v-if="suffix" class="suffix-box">
       <span>{{ suffix }}</span>
@@ -18,7 +19,7 @@
 </template>
 
 <script setup>
-import { ref, defineProps } from "vue";
+import { ref, defineProps, defineEmits, computed } from "vue";
 
 const props = defineProps([
   "value",
@@ -29,6 +30,13 @@ const props = defineProps([
   "suffix",
   "allowClear",
 ]);
+const emits = defineEmits(["input"]);
+
+const handleInput = (event) => {
+  console.log(event);
+  emits("input", event.target.value);
+};
+
 const getData = ref(props.value);
 const clearValue = () => {
   console.log(getData.value.value);
