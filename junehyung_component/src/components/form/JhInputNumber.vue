@@ -4,11 +4,12 @@
       <span>{{ preffix }}</span>
     </div>
     <input
-      type="text"
+      type="number"
       :value="value"
       :disabled="disabled"
       :maxlength="maxLength"
       :placeholder="placeholder"
+      step
       @input="handleInput"
     />
     <div v-if="suffix" class="suffix-box">
@@ -22,9 +23,13 @@
 /**
  * allowClear
  * disabled
- * maxLength
+ * formatter
+ * parser
+ * max
+ * min
  * prefix
  * suffix
+ * step
  * value
  *
  */
@@ -39,7 +44,6 @@ const props = defineProps([
   "suffix",
   "allowClear",
 ]);
-
 const emits = defineEmits(["input"]);
 
 const handleInput = (event) => {

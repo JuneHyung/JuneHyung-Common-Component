@@ -5,7 +5,7 @@
   <div>
     <JhInput
       :value="nameInput"
-      preffix="1"
+      preffix="글자 : "
       suffix=" 입니다."
       placeholder="이름입력하세요."
       :allowClear="true"
@@ -14,18 +14,31 @@
       style="width: 260px"
       @input="handleInput"
     ></JhInput>
-    <CommonInput v-model:value="nameInput"></CommonInput>
+    <JhInputNumber
+      :value="inputNumber"
+      preffix="숫자 : "
+      suffix=" 입니다."
+      placeholder="숫자입력하세요."
+      :allowClear="true"
+      :disabled="inputDisabled"
+      style="width: 260px"
+      @input="handleInputNumber"
+    ></JhInputNumber>
   </div>
   <div class="result-box">
     <p>input : {{ nameInput }}</p>
+    <p>number : {{ inputNumber }}</p>
   </div>
   <button @click="test">TEST</button>
 </template>
 <script setup>
 import { ref } from "vue";
 import JhInput from "@/components/form/JhInput.vue";
-import CommonInput from "@/components/form/CommonInput.vue";
+import JhInputNumber from "@/components/form/JhInput.vue";
+// import CommonInput from "@/components/form/CommonInput.vue";
 const nameInput = ref(null);
+const inputNumber = ref(null);
+
 const inputDisabled = ref(false);
 const test = () => {
   inputDisabled.value = !inputDisabled.value;
@@ -34,6 +47,9 @@ const test = () => {
 
 const handleInput = (value) => {
   nameInput.value = value;
+};
+const handleInputNumber = (value) => {
+  inputNumber.value = value;
 };
 </script>
 
