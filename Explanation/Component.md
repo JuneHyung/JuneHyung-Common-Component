@@ -186,3 +186,11 @@ https://vuetifyjs.com/en/
 https://sass-lang.com/documentation/values/maps#look-up-a-value
 
 https://www.w3schools.com/sass/sass_functions_map.php
+
+
+
+한글입력관련
+
+https://joshua1988.github.io/web-development/vuejs/v-model-usage/
+
+https://vuejs.org/guide/essentials/forms.html#Basic-Usage
